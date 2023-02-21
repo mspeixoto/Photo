@@ -1,0 +1,329 @@
+html{
+    background-color:#fff;
+    
+}
+
+
+main{
+    background-color: #fff;
+    width: 900px;
+    position: relative;
+    left: 175px;
+}
+
+body{
+    background-color: #000;
+    width: 1275px;
+    height: 1890px;
+    position: relative;
+    left: 30px;
+    top: 30px;
+    
+}
+header h1{
+    display: inline;
+    padding-right: 620px;
+    margin-left: 170px;
+    color: #007d7b;
+    font-size: 2.5em;
+    position: relative;
+    bottom: 1px;
+}
+
+/*NAVIGATION*/
+
+nav li{
+    display: inline;
+    color: #fff;
+    position: relative;
+    left: 790px;
+}
+nav a {
+    font-size: 1.5em;
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+
+/*About and gallery section*/
+
+h2{       
+    text-align: center;
+}
+h3{
+    text-align: left;
+    padding-left: 5px;
+}
+
+p {
+    font-size: 1.25em;
+    text-align: justify;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+.fig1,.fig2,.fig3,.fig4, img{
+    display: grid;
+    grid-template-columns: 290px 290px 290px;
+    max-width: 280px;
+    position: relative;
+    right: 10px;   
+}
+.fig1 figcaption:nth-child(2){
+    color: #fff; 
+    position: relative;
+    bottom:180px;  
+}
+
+.fig2 figcaption{
+    color: #000;
+    position: 250px;
+}
+.fig2 figcaption:nth-child(3){
+    position: relative;
+    top: 250px;
+}
+
+.fig3 figcaption{
+    color: #000;
+}
+.fig3 figcaption:first-child{
+    color: #fff;
+    position: relative;
+    top: 150px;
+}
+.fig4 figcaption{
+    color: #000;
+    position: relative;
+    bottom: 150px;
+}
+.fig4 figcaption:last-child{
+    color: #fff;
+}
+figcaption{
+    font-size: 1em;
+    position: relative;
+    bottom: 30px;
+    left: 80px;
+}
+
+label {
+    font-size: 1em;
+}
+
+input {
+    font-size: 1em;
+}
+
+small {
+    font-size: 1em;
+}
+
+/*H1 H2 H3*/
+h1{
+    font-size: 3em;
+}
+h1{
+    background-color: #fff;
+    text-align: center;
+}
+h2 {
+    font-size: 2em;
+}
+
+/*YOURINFO*/
+
+#yourinfo{
+    text-align: center;
+    color: #fff;
+    position: relative;
+    bottom: 20px
+}
+#yourinfo p{
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+}
+
+
+/*FORM*/
+#form{
+    position: relative;
+    bottom: 30px;
+}
+#form li{
+    text-align:left;
+    list-style: none;
+    width: 800px;
+    position: relative;
+    left: 200px;
+}
+#form li:nth-child(even){
+    background-color: #fff;
+    color: #007d7b;
+    text-align: left; 
+
+}
+#form li:nth-child(odd){
+    padding-top: 15px;
+  
+}
+#form h3 {
+    background-color: #007d7b;
+    text-align: center;
+    width: 275px;
+    position: relative;
+    left: 500px;
+    border-radius: 10px;
+
+}
+
+
+footer{
+    color: #fff;
+    text-align: center;
+    background-color:#000; 
+    position: relative;
+    bottom: 50px;
+}
+
+/*double column*/
+@media all and (max-width: 880px) {
+
+    html{
+        width: 880px;
+    }
+    
+    body{
+        background-color: #000;
+        width: 830px;
+        height: 3500px;
+        position: relative;
+        left: 5px;
+        top: 30px;
+        
+    }
+
+    
+    .fig1,.fig2,.fig3,.fig4, img {
+        display: grid;
+        grid-template-columns: 350px 200px; 
+        max-width: 330px;
+        position: relative;
+        right: 10px;  
+    }
+
+    header h1{
+        display: inline;
+        padding-right: 485px;
+        margin-left: 170px;
+        color: #007d7b;
+        font-size: 1.5em;
+        position: relative;
+        bottom: 1px;
+        right: 90px;
+    }
+    
+    nav li{
+        display: inline;
+        color: #fff;
+        position: relative;
+        left: 250px;
+        
+    }
+    main{
+        position: relative;
+        left: 50px;
+        max-width: 720px;
+    }
+
+    #form li{
+        left: 95px;
+        width: 565px;
+    }
+
+    #form h3{
+        width: 300px;
+        left: 275px;
+        border-radius: 10px;
+    }
+
+    footer{
+        color: #fff;
+        text-align: center;
+        background-color:#000; 
+        position: relative;
+        bottom: 20px;
+    }
+}    
+
+/*single column*/
+@media all and (max-width: 500px){
+    html{
+        width: 500px;
+    }
+    
+    body{
+        background-color: #000;
+        width: 480px;
+        height: 4900px;
+        position: relative;
+        left: 5px;
+        top: 30px;  
+    }
+
+    
+    .fig1,.fig2,.fig3,.fig4, img {
+        display: grid;
+        grid-template-columns: 300px;
+        width: 400px;
+        position: relative;
+        
+    }
+
+    header h1{
+        display: inline;
+        padding-right: 135px;
+        margin-left: 170px;
+        color: #007d7b;
+        font-size: 1.5em;
+        position: relative;
+        bottom: 1px;
+        right: 90px;
+    }
+    
+    nav li{
+        display: inline;
+        color: #fff;
+        position: relative;
+        left: 85px;
+        
+    }
+    main{
+        position: relative;
+        left: 40px;
+        max-width: 400px;
+    }
+
+    #form li{
+        left: 20px;
+        width: 365px;
+    }
+
+    #form h3{
+        width: 185px;
+        left: 150px;
+        border-radius: 10px;
+    }
+
+    footer{
+        color: #fff;
+        text-align: center;
+        background-color:#000; 
+        position: relative;
+        bottom: 20px;
+    }
+}
